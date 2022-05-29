@@ -1,0 +1,349 @@
+
+*{  
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    width: auto;
+    background-color:#ffffff ;
+}
+.feedback {
+    background-color : #31B0D5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border-color: #46b8da;
+  }
+  #Btn_NAV
+  {
+      display: none;
+  }
+#mybutton {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 1000;
+}
+header{
+    color:#fff;
+    background: linear-gradient(rgb(8, 38, 159),rgb(184, 217, 251));
+}
+header .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 10%;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;/*
+    padding-right: 40px;
+    padding-left: 40px;*/
+}
+header section{
+    font-family: Franklin Gothic, Arial Bold;
+    font-size: 65pt;
+    letter-spacing: 5px;
+    text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.582);
+}
+header img{
+    width: 250px;
+}
+nav{
+   background: linear-gradient(rgb(8, 38, 159), rgb(2, 107, 255));
+   width: 100%;
+   height: 50px;
+   line-height: 50px;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10pt;
+}
+#principal
+{
+    margin: auto;
+}    
+.produtos{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    justify-content: center;
+    padding: 30px; /* troquei de 50px pra 30px pra evitar quebra de linha quando tem hoover*/
+}
+figure{
+    width: 240px;
+    height: 380px;
+    padding: 0px;
+    margin: 20px;
+    padding-top: 0;
+    display: flex;
+    border: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+figure:hover{
+    border: 2px solid #7395BD;
+    border-radius: 20px;
+}
+/*#item1 figure{
+    width: 260px;
+}
+#item2 figure{
+    padding: 15px;
+}
+#item5 figure{
+    width: 250px;
+}*/
+/*figure img{
+    width: 150px;     Coloquei esse width e padding-bottom dentro de .img
+    padding-bottom: 20px;
+}*//*
+li:hover{
+    background-color: rgb(78, 185, 242);
+    border-radius: 10px;
+    margin: 5px 0 5px 0;
+}*/
+a:hover{
+    color: #032435;
+    background-color: #7395BD;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+figcaption{
+    
+    box-sizing: content-box;
+    text-align: center;
+    font-size: 13pt; /*troquie de 15 pt pra 13pt*/
+}
+.img{
+    width: 150px;
+    padding-bottom: 20px;
+    position: relative;
+    left: auto;
+    top: 5px;
+    height: 20vh;
+    width: auto;
+    box-sizing: border-box; /*tinha imagem saindo pra fora do hoover*/
+}
+figcaption hr{
+    width: 210px;  /*coloquei isso*/
+    margin: auto; /*coloquei isso*/
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+figcaption p{
+    
+    padding: 20px 0px;
+}
+.Preco{
+    margin-top: 30px;
+    color: #7395BD;
+    font-weight: bold;
+    font-size: 28px;
+    padding: 10px 40px;
+    border-radius: 5px;
+}
+footer{
+
+    background-color: #032435;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-top: 20px;
+}
+input,textarea,button{
+    display: block;
+    margin-left: 60px;
+    border: none;
+    margin-bottom: 20px;
+    width: 350px;
+    border-radius: 20px;
+    padding-left: 5px;
+}
+input{
+    display: block;
+    height: 40px;
+}
+textarea{
+    padding-top: 5px;
+}
+button{
+    height: 50px;
+    background-color: rgb(25, 99, 235);
+    border-radius: 50px;
+    color: #fff;
+    font-size: 15pt;
+}
+#logo_footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+#icones{
+    
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+}
+.fa-brands{
+    font-size: 64px;
+    margin: auto;
+}
+.fa-brands:hover{
+    color: #7395BD;
+}
+#fale{
+    font-size: 20pt;
+    color: #fff;
+}
+.Alunos{
+    color: #ffffff;
+    padding: 10vh 0;
+}
+@media screen and (max-width:768px){
+    
+
+    .DropdownMenu{
+        display: none;
+    }
+    #menu.active  {
+
+        display: inline;
+        position: absolute;
+        top: 20vh;
+        z-index: 20000;
+        margin: auto;
+    }
+    ul{
+    display: block;
+    justify-content: space-around;
+    list-style: none;
+    background-color: #31B0D5;
+    height: max-content;
+    }
+
+    #Btn_NAV{
+        width: 100px;
+        height: 25px;
+        position: absolute;
+        padding: 25px 30px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        right:5vh ;
+    }
+    #Btn_NAV:hover{
+        background-color: #032435;
+    }
+    header{
+        
+        position: fixed;
+        z-index: 2000000;
+        height: 20vh;
+        width: 100%;
+        display: flex;
+        /*justify-content: center;
+        */align-items: center;
+    }
+    header img{
+        width: 16vh;
+    }
+    header section{
+        font-size: 4vh;
+        display: none;
+    }
+    li{
+        width: 100%;
+        padding-bottom:1vh ;
+        display: inline-block;
+
+        text-align: center;
+    }
+    input,textarea,button{
+        width: 30vh;
+        margin: 0;
+    }   
+     #principal{
+        padding-top: 20vh;
+    }
+
+    .fa-brands{
+        padding-top: 5vh;
+        font-size: 64px;
+        color: #032435;
+        margin-bottom: 20px;
+    }
+/*
+    #logo_footer img{
+        width: 10vh;
+        height: 10vh;
+    }
+    #icones{
+        justify-content: end;
+        margin: auto;
+        padding-left: 30px;
+    }
+
+    #fale{
+        display: block;
+        width: 100px;
+        font-size: 2.5vh;
+        text-align: center;
+    }*/
+
+    footer{
+        background-color: #032435;
+        display: inline;
+        justify-content: center;
+        
+    }
+    footer section{
+    display: flex;
+        justify-content: center;
+    }
+    #Contato_Section{
+        display: inline;
+        align-items:center ;
+        justify-content: center;
+    }
+    #Contato{
+        display: flex;
+        flex-wrap: wrap;
+        align-items:center ;
+        justify-content: center;
+
+        padding-top: 10px;
+        margin: auto;
+    }
+    input,textarea {
+        width: 80%;
+        padding-top: 1vh;
+        margin-top: 20px;
+        border: 1px solid #31B0D5;
+    }
+
+    #Contato_Section button{
+
+        margin-top: 5vh;
+        margin-bottom: 10vh;
+
+    }
+    .Alunos{
+        color: #46b8da;
+    }
+
+}
